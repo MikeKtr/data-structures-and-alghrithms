@@ -17,6 +17,9 @@ class node():
             print(first.val,end = "->")
         print("None")
 
+
+#   in order to split linked list in half you move two pointers, one two times faster than the other 
+#   and return the 'slower one'
 def split(head):
     fast = head
     slow = head
@@ -31,6 +34,8 @@ def split(head):
     return second
 
 
+
+#   merge uses recursion in order to sort both lists
 def merge(l1,l2):
     
     if l1 == None:
@@ -44,6 +49,8 @@ def merge(l1,l2):
         l2.next=merge(l1,l2.next)
         return l2
 
+#   main merge function: first you set pointer to half of recieved list and then you recursively sort
+#   both of them merge sort
     
 def merge_sort(head):
   
