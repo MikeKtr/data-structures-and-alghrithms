@@ -73,7 +73,7 @@ def parent(i):
 
 
 #   in heapsort, first of all, we have to swap elements in places so array can be represented
-# as compleate tree, where both children of every node are smaller 
+#   as compleate tree, where both children of every node are smaller 
 
 #   heapify function that compares nodes with its children and swaps with higher child
 #   after that it resursivly calls itself on swapped child to 'fix' inconsistencies if they arised

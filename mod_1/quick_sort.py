@@ -6,13 +6,14 @@ def Lomuto_partition(A,p,r):
         if(A[j] <= piwot):
             i+=1
             A[i],A[j] = A[j],A[i]
+
     A[r],A[i+1] = A[i+1],A[r]
     return i
 
 def Hoare_partition(A,p,r):
     i = p - 1
     j = r + 1
-    piwot = A[(p+r)//2]
+    piwot = A[(p+r) // 2]
     while(True):
         i+=1
         while(A[i] < piwot):
@@ -25,13 +26,11 @@ def Hoare_partition(A,p,r):
             return j
         A[i],A[j] = A[j],A[i]
 
-    print(A[p:r] , " piwot: " , A[piwot])
-    return j
 
 def quick_sort(A,p,r):
 
     if p < r:
-        q = Lomuto_partition(A,p,r)
+        q = Hoare_partition(A,p,r)
 
 #IMPORTANT INFO!: if you are using Lomuto_partition you can change line below to quick_sort(A,p,q-1) for faster sorting
 
@@ -40,6 +39,6 @@ def quick_sort(A,p,r):
 
 
 
-tab = [15, 75, 41, 2, 25, 16, 77, 72, 37, 14, 62, 67, 93, 25, 87]
-quick_sort(tab,0,14)
+tab = [4,1,3,6,4]
+quick_sort(tab,0,4)
 print(tab)
