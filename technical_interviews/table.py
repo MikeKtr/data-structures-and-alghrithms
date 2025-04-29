@@ -39,7 +39,6 @@ C = []
 j = 0
 
 for i in range(len(A)):
-
     if(sito[map[A[i]-1]] == 0):
         C.append(A[i])
 print(C)

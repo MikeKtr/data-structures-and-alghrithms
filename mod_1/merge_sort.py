@@ -1,4 +1,4 @@
-#merge sort is a sorting algorithm that rely on recursion.
+    #merge sort is a sorting algorithm that rely on recursion.
 
 #you split it in half until you have only one element in two arrays, then you connect them based on which is biger
 
